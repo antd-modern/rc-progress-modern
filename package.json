@@ -1,5 +1,5 @@
 {
-  "name": "rc-progress",
+  "name": "rc-progress-modern",
   "version": "4.0.0",
   "description": "progress ui component for react",
   "keywords": [
@@ -31,7 +31,6 @@
     "compile": "father build",
     "prepare": "dumi setup",
     "gh-pages": "npm run now-build && father doc deploy",
-    "prepublishOnly": "npm run compile && np --yolo --no-publish",
     "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "test": "rc-test",
@@ -46,7 +45,7 @@
   "dependencies": {
     "@babel/runtime": "^7.10.1",
     "classnames": "^2.2.6",
-    "rc-util": "^5.16.1"
+    "rc-util": "npm:rc-util-modern@^5.16.1"
   },
   "devDependencies": {
     "@rc-component/father-plugin": "^1.0.0",
